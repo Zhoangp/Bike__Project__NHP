@@ -1,0 +1,53 @@
+.out__cover {
+    transition: .5s;
+    top: 35%;
+    left: 30%;
+    position: absolute;
+    color: #51E8EF;
+    font-family: Pilat_light;
+    font-size: 10px;
+    display: flex;
+    .out__circle {
+        cursor: pointer;
+        position:relative;
+        svg circle {
+            stroke-dasharray: 0 2000;
+            stroke-dashoffset: -100;
+            stroke-width:2 ;
+            transition: all .2s;
+        }
+        .out__core {
+            left: 35%;
+            top: 25%;
+            position: absolute;
+            svg {
+                path {
+            transition: all .2s;
+
+                }
+            }
+        }
+        
+    }
+    p {
+        padding: 8px 0px 0px 5px;
+        opacity: 0;
+        transition: all .2s;
+    }
+}
+.out__circle:hover .out__core svg path {
+    stroke :#51E8EF;
+}
+.out__circle:hover + p {
+    opacity: 1;
+}
+.out__circle:hover svg circle {
+    stroke-dasharray: 2000 0;
+    stroke-dashoffset: 1;
+}
+.out__trans {
+    transform: translatey(-130px);
+}
+.hidee {
+    z-index:-99;
+}

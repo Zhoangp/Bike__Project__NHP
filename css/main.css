@@ -1,0 +1,771 @@
+header {
+  position: relative;
+  z-index: 999;
+}
+
+header .cover__header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+header .cover__header .logo {
+  display: flex;
+}
+
+header .cover__header .logo img {
+  width: 50px;
+  height: 50px;
+}
+
+header .cover__header .logo .logo__text {
+  padding: 10px 0;
+  line-height: 10px;
+  margin-left: 10px;
+}
+
+header .cover__header .logo .logo__text p {
+  font-size: 25px;
+  color: white;
+}
+
+header .cover__header .logo .logo__text span {
+  padding-left: 2px;
+  letter-spacing: 10px;
+  font-family: Pilat_light;
+  font-size: 10px;
+  color: #51E8EF;
+}
+
+header .cover__header .header__menu {
+  overflow: hidden;
+  z-index: 1;
+  display: flex;
+  color: #707070;
+}
+
+header .cover__header .header__menu div {
+  cursor: pointer;
+  transition: all .5s;
+  font-size: 12px;
+  height: 20px;
+  margin-left: 70px;
+}
+
+header .cover__header .header__menu div p {
+  transition: all .2s;
+  font-family: Pilat_book;
+}
+
+header .cover__header .header__menu div p:last-child {
+  bottom: 5px;
+  position: relative;
+  font-family: Pilat_book;
+  color: #51E8EF;
+}
+
+header .cover__header .header__menu div:first-child:hover p:first-child {
+  transform: translatey(-80%);
+}
+
+header .cover__header .header__menu div:first-child:hover p:last-child {
+  transform: translatey(-29px);
+}
+
+header .cover__header .header__menu div:nth-child(2):hover p:first-child {
+  transform: translatey(-80%);
+}
+
+header .cover__header .header__menu div:nth-child(2):hover p:last-child {
+  transform: translatey(-29px);
+}
+
+header .cover__header .header__menu div:last-child:hover p:first-child {
+  transform: translatey(-80%);
+}
+
+header .cover__header .header__menu div:last-child:hover p:last-child {
+  transform: translatey(-29px);
+}
+
+.bgr .background {
+  background-repeat: no-repeat;
+  transition: all .7s;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.bgr .background:first-child {
+  background-image: url("../img/bikeweb_03-Current-View.png");
+  z-index: -9;
+}
+
+.bgr .bg__up {
+  transition: all 1.5s;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -11;
+}
+
+.bgr .bg__up .background:first-child {
+  position: absolute;
+  transform: translatey(-40%);
+  background: black;
+  z-index: -10;
+}
+
+.bgr .bg__up .background:first-child h4 {
+  font-size: 30px;
+  color: white;
+}
+
+.bgr .bg__up .background:first-child h1 {
+  font-size: 70px;
+  font-family: Pilat_book;
+  color: #51E8EF;
+}
+
+.bgr .bg__up .background:first-child .background__text {
+  position: absolute;
+  position: absolute;
+  top: 60%;
+  left: 40%;
+}
+
+.bgr .bg__up .background:first-child .background__text h4 {
+  font-family: Pilat_book;
+  font-size: 30px;
+  color: white;
+}
+
+.bgr .bg__up .background:first-child .background__text h1 {
+  margin: 20px 0 35px 0px;
+  font-size: 70px;
+  font-family: Pilat_book;
+  color: #51E8EF;
+}
+
+.bgr .bg__up .background:first-child .background__text .background__paragraph {
+  line-height: 30px;
+  width: 700px;
+  display: flex;
+}
+
+.bgr .bg__up .background:first-child .background__text .background__paragraph p {
+  line-height: 20px;
+  margin-right: 30px;
+  font-family: Pilat_light;
+  font-size: 10px;
+  color: #707070;
+}
+
+.bgr .bg__up .background:nth-child(2) {
+  background-size: 60%;
+  left: 15%;
+  top: 90%;
+  z-index: -11;
+  background-image: url("../img/bikeweb_05-Current-View.png");
+}
+
+.bgr .bg__up .background:nth-child(2) .background__play {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 25%;
+  position: absolute;
+  bottom: 45%;
+}
+
+.bgr .bg__up .background:nth-child(2) .background__play p {
+  width: 280px;
+  padding-top: 10px;
+  padding-left: 25px;
+  font-size: 11px;
+  font-family: Pilat_light;
+  color: white;
+}
+
+.bgr .bg__up .background:nth-child(2) .background__play .background__play__cover {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background: #51E8EF;
+  border-radius: 50%;
+}
+
+.bgr .bg__up .background:nth-child(2) .background__play .background__play__cover .background__play__core {
+  transition: all .5s;
+  width: 57px;
+  height: 57px;
+  background: black;
+  border-radius: 50%;
+}
+
+.bgr .bg__up .background:nth-child(2) .background__play .background__play__cover svg {
+  position: absolute;
+  padding-left: 4px;
+}
+
+.bgr .bg__up .background:nth-child(2) .background__play .background__play__cover:hover .background__play__core {
+  fill: black;
+  width: 0;
+  height: 0;
+}
+
+.bgr .bg__up .background:nth-child(2) .background__play .background__play__cover:hover svg path {
+  fill: black;
+}
+
+.bgr .bg__up .background:nth-child(3) {
+  transition: all 1s;
+  background-image: url("../img/img_bike.png");
+  position: absolute;
+  top: 125%;
+  left: 28%;
+  background-size: 10%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bgr .bg__up .background:nth-child(3) h1 {
+  transition: all 1.5s;
+  color: #51E8EF;
+  font-size: 200px;
+  position: absolute;
+  right: 39%;
+  top: 10%;
+}
+
+.bgr .bg__up .background:nth-child(3) svg:first-child {
+  transition: all 1s;
+  width: 203px;
+  height: 200px;
+  position: absolute;
+  bottom: 55%;
+  right: 41%;
+}
+
+.bgr .bg__up .background:nth-child(3) svg:nth-child(2) {
+  transition: all 1s;
+  width: 153px;
+  height: 151px;
+  position: absolute;
+  right: 50%;
+  bottom: 34%;
+}
+
+.bgr .bg__up .background:nth-child(3) .bg__textbox1 {
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  width: 330px;
+}
+
+.bgr .bg__up .background:nth-child(3) .bg__textbox1 h4 {
+  font-family: Pilat_book;
+  font-size: 30px;
+  color: white;
+}
+
+.bgr .bg__up .background:nth-child(3) .bg__textbox1 p {
+  line-height: 25px;
+  font-family: Pilat_light;
+  font-size: 15px;
+  color: #707070;
+}
+
+.bgr .bg__up .background:nth-child(3) .bg__textbox2 {
+  position: absolute;
+  bottom: 25%;
+  left: 15%;
+  width: 330px;
+}
+
+.bgr .bg__up .background:nth-child(3) .bg__textbox2 h6 {
+  font-family: Pilat_book;
+  font-size: 20px;
+  color: white;
+}
+
+.bgr .bg__up .background:nth-child(3) .bg__textbox2 ul li {
+  list-style: none;
+  line-height: 20px;
+  font-family: Pilat_light;
+  font-size: 12px;
+  color: #707070;
+}
+
+.bgr .bg__up .background:nth-child(3) .bg__textbox2 ul li:before {
+  content: '\2022 ';
+  /* Bullet color */
+  color: #51E8EF;
+  padding-right: 1em;
+}
+
+.up {
+  transform: translatey(-120%);
+}
+
+.svg__move {
+  transform: translate(-143px, 160px);
+  width: 83px !important;
+  height: 80px !important;
+}
+
+.svg__move2 {
+  width: 113px !important;
+  height: 111px !important;
+}
+
+.rotate__h1 {
+  transform: rotatey(360deg);
+}
+
+.bg__scale {
+  background-size: 40% !important;
+}
+
+.bg__transfer {
+  transform: translatex(-60%);
+}
+
+.bg3__transfer {
+  transform: translatey(-60%);
+}
+
+.intro {
+  position: absolute;
+  top: 40%;
+}
+
+.intro .intro__title {
+  transition: all 1s;
+  width: 350px;
+  opacity: 1;
+}
+
+.intro .intro__title h1 {
+  transition: all .7s;
+  font-size: 70px;
+  font-family: Pilat_book;
+  color: #51E8EF;
+}
+
+.intro .intro__title h4 {
+  transition: all .5s;
+  line-height: 25px;
+  font-size: 50px;
+  color: white;
+}
+
+.intro .intro__title p {
+  line-height: 20px;
+  transition: all .9s;
+  font-family: Pilat_light;
+  font-size: 10px;
+  color: #707070;
+}
+
+.intro .intro__button {
+  transition: all 1s;
+  position: relative;
+  margin-top: 30px;
+  /* button {
+            font-size: 8px;
+            color: white;
+            font-family: Pilat_light;
+            letter-spacing: 7px;
+            background-color: transparent;
+            border: 1px solid #51E8EF;
+            padding: 10px 30px;
+            border-radius: 20px;
+
+        } */
+  /* .btn svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+    } */
+}
+
+.intro .intro__button .button {
+  text-decoration: none;
+}
+
+.intro .intro__button .button svg rect {
+  opacity: .7;
+  stroke-width: 2;
+  stroke-dasharray: 100 150 50 0;
+  stroke-dashoffset: 0;
+  transition: all 600ms ease;
+}
+
+.intro .intro__button .button span {
+  position: absolute;
+  left: 25%;
+  top: 39%;
+  font-size: 10px;
+  color: white;
+  font-family: Pilat_book;
+  letter-spacing: 7px;
+}
+
+.intro .intro__button .button:hover svg rect {
+  opacity: 1;
+  stroke-width: 2;
+  stroke-dashoffset: 437;
+}
+
+.intro .intro__button .button:hover span {
+  color: #51E8EF;
+}
+
+.intro__mov .intro__title {
+  opacity: 0;
+}
+
+.intro__mov .intro__title h1 {
+  transform: translatex(-350px);
+}
+
+.intro__mov .intro__title h4 {
+  transform: translatex(-350px);
+}
+
+.intro__mov .intro__title p {
+  transform: translatex(-500px);
+}
+
+.intro__mov .intro__button {
+  transform: translatey(150px);
+}
+
+.parameter {
+  overflow: hidden;
+  height: 70px;
+  width: 780px;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 4%;
+  right: 8%;
+  display: flex;
+}
+
+.parameter .parameter__item {
+  opacity: 1;
+  display: flex;
+}
+
+.parameter .parameter__item div {
+  line-height: 9px;
+  margin-left: 10px;
+}
+
+.parameter .parameter__item div p {
+  font-family: Pilat_light;
+  font-size: 10px;
+  color: #707070;
+}
+
+.parameter .parameter__item div span {
+  font-family: Pilat_book;
+  font-size: 11px;
+  color: white;
+}
+
+.parameter .parameter__item:first-child {
+  transition: all .5s;
+}
+
+.parameter .parameter__item:nth-child(2) {
+  transition: all .7s;
+}
+
+.parameter .parameter__item:nth-child(3) {
+  transition: all .9s;
+}
+
+.mov__para .parameter__item {
+  opacity: 0;
+  transform: translatey(70px);
+}
+
+.feature .feature__cover {
+  transition: all 1s;
+}
+
+.feature .feature__cover .feature___run .feature__item {
+  opacity: 1 !important;
+}
+
+.feature .feature__cover .feature___run .feature__item:first-child {
+  transform: translate(-348px, 180px);
+}
+
+.feature .feature__cover .feature___run .feature__item:nth-child(2) {
+  transform: translate(-250px, -80px);
+}
+
+.feature .feature__cover .feature___run .feature__item:nth-child(3) {
+  transform: translate(20px, -170px);
+}
+
+.feature .feature__cover .feature___run .feature__item:nth-child(4) {
+  transform: translate(-100px, 70px);
+}
+
+.feature .feature__cover .feature___run .feature__item:nth-child(5) {
+  transform: translate(130px, 50px);
+}
+
+.feature .feature__cover .feature__list {
+  position: absolute;
+  top: 35%;
+  right: 35%;
+}
+
+.feature .feature__cover .feature__list .feature__item {
+  opacity: 0;
+  transition: all 1s;
+  position: absolute;
+}
+
+.feature .feature__cover .feature__list .feature__item .feature__item__cover {
+  cursor: pointer;
+  position: relative;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.feature .feature__cover .feature__list .feature__item .feature__item__cover .cover__background {
+  overflow: hidden;
+  transition: all .35s;
+  width: 90px;
+  opacity: .2;
+  background: BLACK;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50px;
+}
+
+.feature .feature__cover .feature__list .feature__item .feature__item__cover .cover__background .cover__background__text {
+  line-height: 9px;
+  transform: translate(60%, 50%);
+  width: 160px;
+}
+
+.feature .feature__cover .feature__list .feature__item .feature__item__cover .cover__background .cover__background__text span {
+  font-family: Pilat_book;
+  font-size: 10px;
+  color: white;
+}
+
+.feature .feature__cover .feature__list .feature__item .feature__item__cover .cover__background .cover__background__text p {
+  font-family: Pilat_light;
+  font-size: 8px;
+  color: #707070;
+}
+
+.feature .feature__cover .feature__list .feature__item .feature__item__cover .feature__item__medium {
+  transition: all .35s;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  transform: rotate(45deg) scale(1);
+  background: transparent;
+  width: 35px;
+  height: 35px;
+}
+
+.feature .feature__cover .feature__list .feature__item .feature__item__cover .feature__item__medium .arrow:first-child {
+  opacity: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 8px;
+  height: 8px;
+  border-top: 1.5px solid #51E8EF;
+  border-left: 1.5px solid #51E8EF;
+}
+
+.feature .feature__cover .feature__list .feature__item .feature__item__cover .feature__item__medium .arrow:nth-child(2) {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 8px;
+  height: 8px;
+  border-bottom: 1.5px solid #51E8EF;
+  border-left: 1.5px solid #51E8EF;
+}
+
+.feature .feature__cover .feature__list .feature__item .feature__item__cover .feature__item__medium .arrow:nth-child(3) {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 8px;
+  height: 8px;
+  border-bottom: 1.5px solid #51E8EF;
+  border-right: 1.5px solid #51E8EF;
+}
+
+.feature .feature__cover .feature__list .feature__item .feature__item__cover .feature__item__medium .arrow:nth-child(4) {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 8px;
+  height: 8px;
+  border-top: 1.5px solid #51E8EF;
+  border-right: 1.5px solid #51E8EF;
+}
+
+.feature .feature__cover .feature__list .feature__item .feature__item__cover .feature__item__medium .feature__item__core {
+  transforM: scale(1);
+  transition: all .35s;
+  background: #51E8EF;
+  opacity: .3;
+  width: 20px;
+  height: 20px;
+}
+
+.feature .feature__cover .feature__list .feature__item .feature__item__cover:hover .cover__background {
+  opacity: .9;
+  width: 280px;
+}
+
+.feature .feature__cover .feature__list .feature__item .feature__item__cover:hover .feature__item__medium {
+  transform: rotate(135deg) scale(1.2);
+}
+
+.feature .feature__cover .feature__list .feature__item .feature__item__cover:hover .feature__item__core {
+  transform: scale(0.5);
+  opacity: 1;
+}
+
+* {
+  font-family: 'Source Code Pro', monospace;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header,
+footer,
+section,
+aside,
+nav,
+main,
+article,
+figure {
+  display: block;
+}
+
+.cover {
+  padding: 20px 100px;
+}
+
+@font-face {
+  font-family: Pilat_black;
+  src: url("../font/PilatWide-Black.ttf") format("woff");
+}
+
+@font-face {
+  font-family: Pilat_bold;
+  src: url("../font/PilatWide-Bold.ttf") format("woff");
+}
+
+@font-face {
+  font-family: Pilat_book;
+  src: url("../font/PilatWide-Book.ttf") format("woff");
+}
+
+@font-face {
+  font-family: Pilat_demibold;
+  src: url("../font/PilatWide-DemiBold.ttf") format("woff");
+}
+
+@font-face {
+  font-family: Pilat_light;
+  src: url("../font/PilatWide-Light.ttf") format("woff");
+}
+
+.out__cover {
+  transition: .5s;
+  top: 35%;
+  left: 30%;
+  position: absolute;
+  color: #51E8EF;
+  font-family: Pilat_light;
+  font-size: 10px;
+  display: flex;
+}
+
+.out__cover .out__circle {
+  cursor: pointer;
+  position: relative;
+}
+
+.out__cover .out__circle svg circle {
+  stroke-dasharray: 0 2000;
+  stroke-dashoffset: -100;
+  stroke-width: 2;
+  transition: all .2s;
+}
+
+.out__cover .out__circle .out__core {
+  left: 35%;
+  top: 25%;
+  position: absolute;
+}
+
+.out__cover .out__circle .out__core svg path {
+  transition: all .2s;
+}
+
+.out__cover p {
+  padding: 8px 0px 0px 5px;
+  opacity: 0;
+  transition: all .2s;
+}
+
+.out__circle:hover .out__core svg path {
+  stroke: #51E8EF;
+}
+
+.out__circle:hover + p {
+  opacity: 1;
+}
+
+.out__circle:hover svg circle {
+  stroke-dasharray: 2000 0;
+  stroke-dashoffset: 1;
+}
+
+.out__trans {
+  transform: translatey(-130px);
+}
+
+.hidee {
+  z-index: -99;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,19 @@
+* {
+    font-family: 'Source Code Pro', monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  header,
+footer,
+section,
+aside,
+nav,
+main,
+article,
+figure {
+    display: block;
+}
+.cover {
+    padding: 20px 100px;
+}

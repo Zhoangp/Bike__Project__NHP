@@ -1,0 +1,44 @@
+.parameter {
+    overflow:hidden;
+    height: 70px;
+    width: 780px;
+    justify-content:space-between;
+    position: absolute;
+    bottom: 4%;
+    right: 8%;
+    display : flex;
+    .parameter__item {
+        opacity: 1;
+        display: flex;
+        div {
+            line-height: 9px;
+            margin-left: 10px;
+            p {
+                font-family: Pilat_light;
+                font-size: 10px;
+                color: #707070;
+            }
+            span {
+                font-family: Pilat_book;
+                font-size: 11px;
+                color: white;
+            }
+        }
+    }
+    .parameter__item:first-child {
+        transition: all .5s;
+    }
+    .parameter__item:nth-child(2) {
+        transition: all .7s;
+    }
+    .parameter__item:nth-child(3) {
+        transition: all .9s;
+    }
+    
+}
+.mov__para {
+    .parameter__item { 
+        opacity: 0;
+        transform: translatey(70px);
+    }
+}

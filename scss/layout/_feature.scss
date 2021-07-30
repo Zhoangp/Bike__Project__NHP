@@ -1,0 +1,147 @@
+.feature {
+    .feature__cover {
+        transition: all 1s;
+        .feature___run { 
+            .feature__item {
+             opacity: 1 !important;
+            }
+         .feature__item:first-child {
+                transform: translate(-348px, 180px);
+            }
+            .feature__item:nth-child(2) {
+
+                transform: translate(-250px, -80px);
+            }
+            .feature__item:nth-child(3) {
+
+            transform: translate(20px, -170px);
+            }
+            .feature__item:nth-child(4) {
+
+              transform: translate(-100px, 70px);
+            }
+            .feature__item:nth-child(5) {
+
+             transform: translate(130px, 50px);
+            }
+        }
+        .feature__list {
+            position:absolute;
+            top:35%;
+            right: 35%;
+            .feature__item {
+                opacity: 0;
+                transition: all 1s;
+                position: absolute;
+                .feature__item__cover {
+                    cursor: pointer;
+                    position:relative;
+                    width: 90px;
+                    height: 90px;
+                    border-radius: 50%;
+                    align-items: center;
+                    justify-content: center;
+                    display: flex;
+                    .cover__background {
+                        overflow:hidden;
+                        transition: all .35s;
+                        width: 90px;
+                        opacity: .2;
+                        background: BLACK;
+                        position:absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        border-radius: 50px;
+                        .cover__background__text { 
+                            line-height: 9px;
+                            transform: translate(60%, 50%);
+                            width: 160px;
+                        span {
+                            font-family: Pilat_book;
+                            font-size: 10px;
+                            color: white;
+                        }
+                        p {
+                            font-family: Pilat_light;
+                            font-size: 8px;
+                            color: #707070;
+                        }
+                    }
+                    }
+                    
+                    .feature__item__medium {
+                        transition: all .35s;
+                        position: relative;
+                        align-items: center;
+                        justify-content: center;
+                        display: flex;
+                        transform: rotate(45deg) scale(1);
+                        background: transparent;
+                        width: 35px;
+                        height: 35px;
+                        .arrow:first-child {
+                        opacity: 1;
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            width: 8px;
+                            height: 8px;
+                            border-top: 1.5px solid #51E8EF;
+                            border-left: 1.5px solid #51E8EF;
+                        }
+                        .arrow:nth-child(2) {
+                            position: absolute;
+                            left: 0;
+                            bottom: 0;
+                            width: 8px;
+                            height: 8px;
+                            border-bottom: 1.5px solid #51E8EF;
+                            border-left: 1.5px solid #51E8EF;
+                        }
+                        .arrow:nth-child(3) {
+                            position: absolute;
+                            right: 0;
+                            bottom: 0;
+                            width: 8px;
+                            height: 8px;
+                            border-bottom: 1.5px solid #51E8EF;
+                            border-right: 1.5px solid #51E8EF;
+                        }
+                        .arrow:nth-child(4) {
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            width: 8px;
+                            height: 8px;
+                            border-top: 1.5px solid #51E8EF;
+                            border-right: 1.5px solid #51E8EF;
+                        }
+                        .feature__item__core {
+                            transforM: scale(1);
+                            transition: all .35s;
+                            background: #51E8EF;
+                            opacity: .3;
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+                    &:hover .cover__background {
+                            opacity: .9;
+                            width: 280px;
+                    }
+                    &:hover .feature__item__medium {
+                        transform:rotate(135deg)  scale(1.2);
+
+                    }
+                    &:hover .feature__item__core {
+                        transform: scale(.5);
+                        opacity: 1;
+
+                    }
+                }
+            }
+        }
+    }
+}

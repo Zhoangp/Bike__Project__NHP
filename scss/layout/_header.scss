@@ -1,0 +1,88 @@
+header {
+    position: relative;
+    z-index: 999;
+
+    .cover__header {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+
+        .logo {
+
+            display: flex;
+
+            img {
+                width: 50px;
+                height: 50px;
+            }
+
+            .logo__text {
+                padding: 10px 0;
+                line-height: 10px;
+                margin-left: 10px;
+
+                p {
+                    font-size: 25px;
+                    color: white;
+                }
+
+                span {
+                    padding-left: 2px;
+                    letter-spacing: 10px;
+                    font-family: Pilat_light;
+                    font-size: 10px;
+                    color: #51E8EF;
+                }
+            }
+
+        }
+
+        .header__menu {
+            overflow:hidden;
+            z-index:1;
+            display: flex;
+            color: #707070;
+
+            div {
+                cursor: pointer;
+                transition:all .5s;
+                font-size: 12px;
+                height: 20px;
+                margin-left: 70px;
+                p {
+                    transition:all .2s;
+                    font-family: Pilat_book;
+                }
+
+                p:last-child {
+                    bottom:5px;
+                    position:relative;
+                    font-family: Pilat_book;
+                    color:#51E8EF;
+                }
+            }
+            
+
+        }
+        .header__menu div:first-child:hover p:first-child {
+            transform: translatey(-80%);
+        }
+        .header__menu div:first-child:hover p:last-child {
+            transform: translatey(-29px);
+        }
+
+        .header__menu div:nth-child(2):hover p:first-child {
+            transform: translatey(-80%);
+        }
+        .header__menu div:nth-child(2):hover p:last-child {
+            transform: translatey(-29px);
+        }
+        .header__menu div:last-child:hover p:first-child {
+            transform: translatey(-80%);
+        }
+        .header__menu div:last-child:hover p:last-child {
+            transform: translatey(-29px);
+        }
+    }
+
+}
